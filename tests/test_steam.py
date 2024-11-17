@@ -10,7 +10,6 @@ from protontricks.steam import (SteamApp, _get_steamapps_subdirs,
                                 find_appid_proton_prefix,
                                 find_steam_compat_tool_app,
                                 find_steam_installations, find_steam_path,
-                                get_custom_compat_tool_installations,
                                 get_custom_windows_shortcuts, get_steam_apps,
                                 get_steam_lib_paths, iter_appinfo_sections)
 

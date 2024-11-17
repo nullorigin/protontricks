@@ -1,5 +1,4 @@
 import stat
-import textwrap
 from pathlib import Path
 
 import pytest

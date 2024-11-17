@@ -8,7 +8,7 @@ import re
 import sys
 import struct
 from binascii import crc32
-from io import BytesIO
+from io import BytesIO, StringIO
 from io import StringIO as unicodeIO
 
 try:
@@ -198,7 +198,7 @@ def loads(s, **kwargs):
     try:
         fp = unicodeIO(s)
     except TypeError:
-        fp = strIO(s)
+        fp = StringIO(s)
 
     return parse(fp, **kwargs)
 

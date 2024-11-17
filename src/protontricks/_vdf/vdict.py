@@ -15,13 +15,6 @@ if sys.version_info[0] >= 3:
     class _iView(_c.ItemsView):
         def __iter__(self):
             return self._mapping.iteritems()
-else:
-    _iter_values = 'itervalues'
-    _range = xrange
-    _string_type = basestring
-    _kView = lambda x: list(x.iterkeys())
-    _vView = lambda x: list(x.itervalues())
-    _iView = lambda x: list(x.iteritems())
 
 
 class VDFDict(dict):
