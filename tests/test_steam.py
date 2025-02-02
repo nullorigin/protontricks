@@ -4,8 +4,7 @@ import time
 from pathlib import Path
 
 import pytest
-import vdf
-
+from protontricks import _vdf as vdf
 from protontricks.steam import (SteamApp, _get_steamapps_subdirs,
                                 find_appid_proton_prefix,
                                 find_steam_compat_tool_app,

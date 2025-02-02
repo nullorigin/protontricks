@@ -117,7 +117,7 @@ RUNTIME_ROOT_GLOB_PATTERNS = (
 )
 
 
-def get_runtime_library_paths(proton_app, use_bwrap=True):
+def get_runtime_library_paths(proton_app, use_bwrap=False):
     """
     Get LD_LIBRARY_PATH value to use when running a command using Steam Runtime
     """
@@ -323,7 +323,7 @@ def run_command(
         winetricks_path, proton_app, steam_app, command,
         use_steam_runtime=False,
         legacy_steam_runtime_path=None,
-        use_bwrap=None,
+        use_bwrap=False,
         start_wineserver=None,
         env=None,
         **kwargs):
