@@ -1,0 +1,12 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.experiments.enabled": false,
+    "python.analysis.extraPaths": [
+        "./",
+        "./src/protontricks/_",
+        "./src/protontricks/_vdf/",
+        "./src/protontricks/cli/",
+        "./tests/",
+        "./tests/cli/",
+    ]
+}

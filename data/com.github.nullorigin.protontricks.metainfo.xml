@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.nullorigin.protontricks</id>
+  <name>Protontricks</name>
+  <summary>Apps and fixes for Proton games</summary>
+  <icon type="stock">wine</icon>
+  <provides>
+    <binary>protontricks</binary>
+    <binary>protontricks-launch</binary>
+  </provides>
+  <launchable type="desktop-id">protontricks.desktop</launchable>
+  <recommends>
+    <id>com.valvesoftware.Steam</id>
+  </recommends>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/nullorigin/protontricks/master/data/screenshot.png</image>
+      <caption>App selection screen</caption>
+    </screenshot>
+  </screenshots>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>console</control>
+  </supports>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>Run Winetricks commands for Steam Play/Proton games among other common Wine features,
+       such as launching external Windows executables. This is often useful when a game requires closed-source runtime libraries or applications
+       that are not included with Proton.</p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <developer id="nullorigin.com">
+    <name>Matthew Fay</name>
+  </developer>
+  <url type="homepage">https://github.com/nullorigin/protontricks</url>
+  <url type="help">https://github.com/nullorigin/protontricks#readme</url>
+  <url type="bugtracker">https://github.com/nullorigin/protontricks/issues</url>
+  <project_license>GPL-3.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <update_contact>mattfay@pm.me</update_contact>
+  <releases>
+  </releases>
+</component>

@@ -1,7 +1,7 @@
 Troubleshooting
 ===============
 
-You can [create an issue](https://github.com/Matoking/protontricks/issues/new/choose) on GitHub. Before doing so, please check if your issue is related to any of the following known issues.
+You can [create an issue](https://github.com/nullorigin/protontricks/issues/new/choose) on GitHub. Before doing so, please check if your issue is related to any of the following known issues.
 
 # Common issues and solutions
 
