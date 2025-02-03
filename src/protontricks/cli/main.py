@@ -8,21 +8,23 @@
 # Script licensed under the GPLv3!
 
 import argparse
+from ast import arg
 import logging
 import os
 import sys
+from typing import Self
 
-from .. import __version__
-from ..flatpak import (FLATPAK_BWRAP_COMPATIBLE_VERSION,
+from protontricks import __version__
+from protontricks.flatpak import (FLATPAK_BWRAP_COMPATIBLE_VERSION,
                        get_running_flatpak_version)
-from ..gui import (prompt_filesystem_access, select_steam_app_with_gui,
+from protontricks.gui import (prompt_filesystem_access, select_steam_app_with_gui,
                    select_steam_installation)
-from ..steam import (find_legacy_steam_runtime_path, find_proton_app,
+from protontricks.steam import (find_legacy_steam_runtime_path, find_proton_app,
                      find_steam_installations, get_steam_apps,
                      get_steam_lib_paths)
-from ..util import run_command
-from ..winetricks import get_winetricks_path
-from .util import (CustomArgumentParser, cli_error_handler, enable_logging,
+from protontricks.util import run_command
+from protontricks.winetricks import get_winetricks_path
+from protontricks.cli.util import (CustomArgumentParser, cli_error_handler, enable_logging,
                    exit_with_error)
 
 logger = logging.getLogger("protontricks")
@@ -438,6 +440,5 @@ def main(args=None, steam_path=None, steam_root=None):
 
     sys.exit(returncode)
 
-
 if __name__ == "__main__":
-    main()
+    cli()
