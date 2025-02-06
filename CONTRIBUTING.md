@@ -1,11 +1,12 @@
 # How can I contribute?
 
 Well, you can...
+
 * Report bugs
 * Add improvements
 * Fix bugs
 
-# Reporting bugs
+## Reporting bugs
 
 The best means of reporting bugs is by following these basic guidelines:
 
@@ -14,7 +15,7 @@ The best means of reporting bugs is by following these basic guidelines:
 * Explain what you had expected to occur, and what really occured.
 * Optionally, if you want, if you're a programmer, you can try to issue a pull request yourself that fixes the issue.
 
-# Adding improvements
+## Adding improvements
 
 The way to go here is to ask yourself if the improvement would be useful for more than just a singular person, if it's for a certain use case then sure!
 

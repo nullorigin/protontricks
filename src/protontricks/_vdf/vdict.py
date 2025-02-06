@@ -156,7 +156,7 @@ class VDFDict(dict):
         key = self.__omap[-1]
         return key[1], self.pop(key)
 
-    def update(self, data=None, **kwargs):
+    def update(self, data=None):
         if isinstance(data, dict):
             data = data.items()
         elif not isinstance(data, list):

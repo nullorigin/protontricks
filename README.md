@@ -1,26 +1,27 @@
-Protontricks
+# Protontricks
+
 ============
 
 [![image](https://img.shields.io/pypi/v/protontricks.svg)](https://pypi.org/project/protontricks/)
 [![Coverage Status](https://coveralls.io/repos/github/nullorigin/protontricks/badge.svg?branch=main)](https://coveralls.io/github/nullorigin/protontricks?branch=main)
 [![Test Status](https://github.com/nullorigin/protontricks/actions/workflows/tests.yml/badge.svg)](https://github.com/nullorigin/protontricks/actions/workflows/tests.yml)
 
-[<img width="240" src="https://flathub.org/assets/badges/flathub-badge-en.png">](https://flathub.org/apps/details/com.github.nullorigin.protontricks)
+[![FLATHUB](https://flathub.org/assets/badges/flathub-badge-en.png =240x)](https://flathub.org/apps/details/com.github.nullorigin.protontricks)
 
 Run Winetricks commands for Steam Play/Proton games among other common Wine features, such as launching external Windows executables.
 
-# What is it?
+## What is it?
 
 This is a wrapper script that allows you to easily run Winetricks commands for Steam Play/Proton games among other common Wine features, such as launching external Windows executables. This is often useful when a game requires closed-source runtime libraries or applications that are not included with Proton.
 
-# Requirements
+## Requirements
 
 * Python 3.6 or newer
 * Winetricks
 * Steam
 * YAD (recommended) **or** Zenity. Required for GUI.
 
-# Usage
+## Usage
 
 **Protontricks can be launched from desktop or using the `protontricks` command.**
 
@@ -28,33 +29,41 @@ This is a wrapper script that allows you to easily run Winetricks commands for S
 
 The basic command-line usage is as follows:
 
-```
-# Find your game's App ID by searching for it
-protontricks -s <GAME NAME>
+### Find your game's App ID by searching for it
 
-# or by listing all games
-protontricks -l
+`protontricks -s <GAME NAME>`
 
-# Run winetricks for the game.
-# Any parameters in <ACTIONS> are passed directly to Winetricks.
-# Parameters specific to Protontricks need to be placed *before* <APPID>.
-protontricks <APPID> <ACTIONS>
+### or by listing all games
 
-# Run a custom command for selected game
-protontricks -c <COMMAND> <APPID>
+`protontricks -l`
 
-# Run the Protontricks GUI
-protontricks --gui
+### Run winetricks for the game
 
-# Launch a Windows executable using Protontricks
-protontricks-launch <EXE>
+### Any parameters in \<ACTIONS> are passed directly to Winetricks
 
-# Launch a Windows executable for a specific Steam app using Protontricks
-protontricks-launch --appid <APPID> <EXE>
+### Parameters specific to Protontricks need to be placed *before* \<APPID>
 
-# Print the Protontricks help message
-protontricks --help
-```
+`protontricks <APPID> <ACTIONS>`
+
+### Run a custom command for selected game
+
+`protontricks -c <COMMAND> <APPID>`
+
+### Run the Protontricks GUI
+
+`protontricks --gui`
+
+### Launch a Windows executable using Protontricks
+
+`protontricks-launch <EXE>`
+
+### Launch a Windows executable for a specific Steam app using Protontricks
+
+`protontricks-launch --appid <APPID> <EXE>`
+
+### Print the Protontricks help message
+
+`protontricks --help`
 
 Since this is a wrapper, all commands that work for Winetricks will likely work for Protontricks as well.
 
@@ -72,10 +81,10 @@ Protontricks comes with desktop integration, adding the Protontricks app shortcu
 
 The **Protontricks** app shortcut should be available automatically after installation. If not, you may need to run `protontricks-desktop-install` in a terminal to enable this functionality.
 
-# Troubleshooting
+## Troubleshooting
 
 For common issues and solutions, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
-# Installation
+## Installation
 
 You can install Protontricks with the included Makefile by running 'make install' from this README file's current directory. More options comming soon!
